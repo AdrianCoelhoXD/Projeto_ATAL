@@ -1,0 +1,51 @@
+Aqui está a documentação simplificada do código fornecido:
+
+### Classes e Métodos
+
+#### Classe `Livro`
+- **Descrição**: Representa um livro com título, autor e ano de publicação.
+- **Métodos**:
+    - `__init__(self, titulo, autor, ano_publicacao)`: Inicializa um objeto `Livro` com título, autor e ano de publicação.
+    - `__str__(self)`: Retorna uma string formatada com as informações do livro.
+
+#### Classe `Biblioteca`
+- **Descrição**: Representa uma biblioteca que contém uma lista de livros.
+- **Métodos**:
+    - `__init__(self)`: Inicializa uma biblioteca vazia.
+    - `adicionar_livro(self, livro)`: Adiciona um livro à biblioteca.
+    - `listar_livros(self)`: Lista todos os livros na biblioteca.
+    - `ordenar_por_titulo(self)`: Ordena os livros por título usando Bubble Sort.
+    - `ordenar_por_autor(self)`: Ordena os livros por autor usando Bubble Sort.
+    - `buscar_por_titulo(self, titulo)`: Busca um livro pelo título.
+
+### Funções de Validação
+
+- **`validar_titulo()`**: Valida a entrada do título para garantir que não esteja vazio.
+- **`validar_data_publicacao()`**: Valida a entrada da data de publicação no formato DD/MM/AAAA.
+- **`validar_autor()`**: Valida a entrada do autor para garantir que contenha apenas letras.
+
+### Interface de Linha de Comando
+
+- **Função `interface()`**: Fornece uma interface de linha de comando para interagir com a biblioteca.
+    - Opções disponíveis:
+        1. Adicionar Livro
+        2. Listar Livros
+        3. Ordenar por Título
+        4. Ordenar por Autor
+        5. Buscar por Título
+        6. Sair
+
+### Execução
+
+- O código é executado a partir da função `interface()` quando o script é executado diretamente.
+
+### Exemplo de Uso
+
+1. Execute o script.
+2. Escolha uma opção do menu para adicionar, listar, ordenar ou buscar livros.
+3. Siga as instruções para inserir os dados necessários.
+
+### Observações
+
+- O código utiliza Bubble Sort para ordenar os livros, o que pode não ser eficiente para grandes listas.
+- As funções de validação garantem que os dados inseridos pelo usuário sejam válidos antes de serem processados.
